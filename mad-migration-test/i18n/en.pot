@@ -1,0 +1,282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: i18next-conv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"POT-Creation-Date: 2026-05-28T13:09:26.506Z\n"
+"PO-Revision-Date: 2026-05-28T13:09:26.506Z\n"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Error loading the data elements"
+msgstr "Error loading the data elements"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Domain"
+msgstr "Domain"
+
+msgid "Value Type"
+msgstr "Value Type"
+
+msgid "Created by"
+msgstr "Created by"
+
+msgid "DHIS2 value"
+msgstr "DHIS2 value"
+
+msgid "The DHIS2 API request failed."
+msgstr "The DHIS2 API request failed."
+
+msgid "Could not read the Excel file."
+msgstr "Could not read the Excel file."
+
+msgid "MAD Migration Test"
+msgstr "MAD Migration Test"
+
+msgid ""
+"Load an OLD MAD workbook, maintain DET M1 mappings, fetch DHIS2 event "
+"values, and compare migration results."
+msgstr ""
+"Load an OLD MAD workbook, maintain DET M1 mappings, fetch DHIS2 event "
+"values, and compare migration results."
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "Mappings"
+msgstr "Mappings"
+
+msgid "Compare"
+msgstr "Compare"
+
+msgid "OLD MAD import"
+msgstr "OLD MAD import"
+
+msgid "1. Upload OLD MAD workbook"
+msgstr "1. Upload OLD MAD workbook"
+
+msgid "2. Review import summary and missing headers"
+msgstr "2. Review import summary and missing headers"
+
+msgid "3. Continue to Mappings tab"
+msgstr "3. Continue to Mappings tab"
+
+msgid "Choose Excel file"
+msgstr "Choose Excel file"
+
+msgid "The importer uses the OLD MAD sheet when present, otherwise the first sheet."
+msgstr "The importer uses the OLD MAD sheet when present, otherwise the first sheet."
+
+msgid "OLD MAD workbook"
+msgstr "OLD MAD workbook"
+
+msgid "Import failed"
+msgstr "Import failed"
+
+msgid "Import summary"
+msgstr "Import summary"
+
+msgid "Rows"
+msgstr "Rows"
+
+msgid "Columns"
+msgstr "Columns"
+
+msgid "Sheet"
+msgstr "Sheet"
+
+msgid "Missing headers"
+msgstr "Missing headers"
+
+msgid "No OLD MAD workbook has been imported yet."
+msgstr "No OLD MAD workbook has been imported yet."
+
+msgid "Preview"
+msgstr "Preview"
+
+msgid "DHIS2 source"
+msgstr "DHIS2 source"
+
+msgid "OLD MAD data is not loaded"
+msgstr "OLD MAD data is not loaded"
+
+msgid ""
+"Upload the OLD MAD workbook before comparing. Mappings can still be edited "
+"now."
+msgstr ""
+"Upload the OLD MAD workbook before comparing. Mappings can still be edited "
+"now."
+
+msgid "DHIS2 source required"
+msgstr "DHIS2 source required"
+
+msgid ""
+"Select the DET M1 program and at least one program stage before fetching "
+"DHIS2 data."
+msgstr ""
+"Select the DET M1 program and at least one program stage before fetching "
+"DHIS2 data."
+
+msgid "Programs could not load"
+msgstr "Programs could not load"
+
+msgid "DHIS2 metadata could not load"
+msgstr "DHIS2 metadata could not load"
+
+msgid "Program stages could not load"
+msgstr "Program stages could not load"
+
+msgid "Program"
+msgstr "Program"
+
+msgid "Enter the program id manually when the DHIS2 programs API is unavailable."
+msgstr "Enter the program id manually when the DHIS2 programs API is unavailable."
+
+msgid "Program stages"
+msgstr "Program stages"
+
+msgid ""
+"Enter comma-separated program stage ids when the DHIS2 programs API is "
+"unavailable."
+msgstr ""
+"Enter comma-separated program stage ids when the DHIS2 programs API is "
+"unavailable."
+
+msgid "Start date"
+msgstr "Start date"
+
+msgid "End date"
+msgstr "End date"
+
+msgid "Page size"
+msgstr "Page size"
+
+msgid "GO code data element"
+msgstr "GO code data element"
+
+msgid "Country data element"
+msgstr "Country data element"
+
+msgid "Region data element"
+msgstr "Region data element"
+
+msgid "DET M1 mappings"
+msgstr "DET M1 mappings"
+
+msgid "Add mapping"
+msgstr "Add mapping"
+
+msgid "Mapping {{number}}"
+msgstr "Mapping {{number}}"
+
+msgid "Untitled"
+msgstr "Untitled"
+
+msgid "Remove"
+msgstr "Remove"
+
+msgid "Indicator"
+msgstr "Indicator"
+
+msgid "Mode"
+msgstr "Mode"
+
+msgid "OLD MAD columns"
+msgstr "OLD MAD columns"
+
+msgid "Use comma-separated OLD MAD column codes for multi-column mappings."
+msgstr "Use comma-separated OLD MAD column codes for multi-column mappings."
+
+msgid "MAD option"
+msgstr "MAD option"
+
+msgid "DHIS2 data element"
+msgstr "DHIS2 data element"
+
+msgid "Save mapping"
+msgstr "Save mapping"
+
+msgid "Data"
+msgstr "Data"
+
+msgid "Upload the OLD MAD workbook before interpreting comparison results."
+msgstr "Upload the OLD MAD workbook before interpreting comparison results."
+
+msgid "Set the program and at least one program stage on the Mappings tab."
+msgstr "Set the program and at least one program stage on the Mappings tab."
+
+msgid "OLD MAD rows"
+msgstr "OLD MAD rows"
+
+msgid "DHIS2 values"
+msgstr "DHIS2 values"
+
+msgid "Fetch DHIS2 data"
+msgstr "Fetch DHIS2 data"
+
+msgid "Fetching DHIS2 event values..."
+msgstr "Fetching DHIS2 event values..."
+
+msgid "DHIS2 fetch failed"
+msgstr "DHIS2 fetch failed"
+
+msgid "Region"
+msgstr "Region"
+
+msgid "Country"
+msgstr "Country"
+
+msgid "Period"
+msgstr "Period"
+
+msgid "Indicator mapping"
+msgstr "Indicator mapping"
+
+msgid "Scope"
+msgstr "Scope"
+
+msgid "OLD MAD"
+msgstr "OLD MAD"
+
+msgid "DHIS2"
+msgstr "DHIS2"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "No comparison available"
+msgstr "No comparison available"
+
+msgid "Load OLD MAD data, fetch DHIS2 data, and select a mapping to compare."
+msgstr "Load OLD MAD data, fetch DHIS2 data, and select a mapping to compare."
+
+msgid "Selected scope details"
+msgstr "Selected scope details"
+
+msgid "DHIS2 rows"
+msgstr "DHIS2 rows"
+
+msgid "No rows to display."
+msgstr "No rows to display."
+
+msgid "Mapping saved"
+msgstr "Mapping saved"
+
+msgid "Could not save mapping"
+msgstr "Could not save mapping"
+
+msgctxt "Application title"
+msgid "__MANIFEST_APP_TITLE"
+msgstr "mad-migration-test"
+
+msgctxt "Application description"
+msgid "__MANIFEST_APP_DESCRIPTION"
+msgstr ""
