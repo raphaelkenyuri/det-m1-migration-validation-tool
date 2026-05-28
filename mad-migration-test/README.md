@@ -1,45 +1,45 @@
-This project was bootstrapped with [DHIS2 Application Platform](https://github.com/dhis2/app-platform).
+# MAD Migration Test App
 
-## Available Scripts
+DHIS2 app for validating DET M1 migration quality by importing OLD MAD workbooks, configuring indicator mappings, fetching DHIS2 event data, and comparing results.
 
-In the project directory, you can run:
+## Prerequisites
 
-### `yarn start`
+- Node.js 18+
+- `pnpm`
+- Access to a DHIS2 instance
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Development
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```bash
+pnpm install
+pnpm start
+```
 
-### `yarn test`
+## Build
 
-Launches the test runner and runs all available tests found in `/src`.<br />
+```bash
+pnpm build
+```
 
-See the section about [running tests](https://platform.dhis2.nu/#/scripts/test) for more information.
+## Deploy
 
-### `yarn build`
+```bash
+pnpm build
+pnpm deploy
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Quality Checks
 
-The build is minified and the filenames include the hashes.<br />
-A deployable `.zip` file can be found in `build/bundle`!
+```bash
+pnpm exec eslint
+pnpm exec tsc --noEmit
+pnpm test
+```
 
-See the section about [building](https://platform.dhis2.nu/#/scripts/build) for more information.
+## App Workflow
 
-### `yarn deploy`
+1. Upload OLD MAD workbook in `Upload`
+2. Configure program/stages and mappings in `Mappings`
+3. Save mapping configuration
+4. Fetch DHIS2 data and compare outputs in `Compare`
 
-Deploys the built app in the `build` folder to a running DHIS2 instance.<br />
-This command will prompt you to enter a server URL as well as the username and password of a DHIS2 user with the App Management authority.<br/>
-You must run `yarn build` before running `yarn deploy`.<br />
-
-See the section about [deploying](https://platform.dhis2.nu/#/scripts/deploy) for more information.
-
-## Learn More
-
-You can learn more about the platform in the [DHIS2 Application Platform Documentation](https://platform.dhis2.nu/).
-
-You can learn more about the runtime in the [DHIS2 Application Runtime Documentation](https://runtime.dhis2.nu/).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

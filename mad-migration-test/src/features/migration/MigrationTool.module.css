@@ -1,4 +1,13 @@
 .page {
+    --surface-raised: var(--colors-white);
+    --surface-muted: var(--colors-grey050);
+    --border-subtle: var(--colors-grey300);
+    --panel-radius: 10px;
+    --card-radius: 8px;
+    --elevation-soft: 0 1px 2px rgb(33 41 52 / 5%);
+}
+
+.page {
     min-height: 100vh;
     background: linear-gradient(
         180deg,
@@ -44,10 +53,10 @@
 .tabs {
     margin-bottom: var(--spacers-dp20);
     padding: var(--spacers-dp8);
-    border: 1px solid var(--colors-grey300);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    background: var(--colors-white);
-    box-shadow: 0 1px 2px rgb(33 41 52 / 6%);
+    background: var(--surface-raised);
+    box-shadow: var(--elevation-soft);
 }
 
 .grid {
@@ -58,11 +67,11 @@
 }
 
 .panel {
-    background: var(--colors-white);
-    border: 1px solid var(--colors-grey300);
-    border-radius: 10px;
+    background: var(--surface-raised);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--panel-radius);
     padding: var(--spacers-dp20);
-    box-shadow: 0 1px 2px rgb(33 41 52 / 5%);
+    box-shadow: var(--elevation-soft);
 }
 
 .panelWide {
@@ -75,6 +84,8 @@
     justify-content: space-between;
     gap: var(--spacers-dp12);
     margin-bottom: var(--spacers-dp16);
+    padding-bottom: var(--spacers-dp8);
+    border-bottom: 1px solid var(--border-subtle);
 }
 
 .panelTitle {
@@ -98,11 +109,11 @@
 }
 
 .mappingCard {
-    border: 1px solid var(--colors-grey300);
-    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--card-radius);
     padding: var(--spacers-dp16);
-    background: var(--colors-white);
-    box-shadow: 0 1px 2px rgb(33 41 52 / 4%);
+    background: var(--surface-raised);
+    box-shadow: 0 1px 2px rgb(33 41 52 / 3%);
 }
 
 .mappingHeader {
@@ -147,7 +158,7 @@
     gap: var(--spacers-dp12);
     margin-top: var(--spacers-dp20);
     padding-top: var(--spacers-dp12);
-    border-top: 1px solid var(--colors-grey300);
+    border-top: 1px solid var(--border-subtle);
 }
 
 .summaryGrid {
@@ -157,10 +168,10 @@
 }
 
 .metric {
-    border: 1px solid var(--colors-grey300);
+    border: 1px solid var(--border-subtle);
     border-radius: 6px;
     padding: var(--spacers-dp12);
-    background: var(--colors-grey050);
+    background: var(--surface-muted);
 }
 
 .metricLabel {
@@ -178,9 +189,9 @@
 .tableWrap {
     max-width: 100%;
     overflow: auto;
-    border: 1px solid var(--colors-grey300);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    background: var(--colors-white);
+    background: var(--surface-raised);
 }
 
 .scrollTableWrap {
@@ -199,19 +210,32 @@
 .compareTable th {
     background: var(--colors-grey100);
     font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .compareTable td,
 .compareTable th {
     white-space: nowrap;
+    padding-top: var(--spacers-dp8);
+    padding-bottom: var(--spacers-dp8);
+}
+
+.compareTable tr:nth-child(even) td {
+    background: rgb(33 41 52 / 1.6%);
+}
+
+.compareTable tr:hover td {
+    background: rgb(9 127 209 / 7%);
 }
 
 .rowMatch td:last-child {
-    background: rgb(46 125 50 / 8%);
+    background: transparent;
 }
 
 .rowMismatch td:last-child {
-    background: rgb(211 47 47 / 10%);
+    background: transparent;
 }
 
 .detailsGrid {
@@ -235,13 +259,29 @@
 }
 
 .statusMatch {
-    color: var(--colors-green700);
+    color: var(--colors-green800);
+    background: rgb(46 125 50 / 10%);
+    border: 1px solid rgb(46 125 50 / 28%);
+    border-radius: 999px;
     font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .statusMismatch {
-    color: var(--colors-red700);
+    color: var(--colors-red800);
+    background: rgb(211 47 47 / 10%);
+    border: 1px solid rgb(211 47 47 / 28%);
+    border-radius: 999px;
     font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .muted {
@@ -253,18 +293,28 @@
     line-height: 16px;
 }
 
+.emptyState {
+    color: var(--colors-grey700);
+    padding: var(--spacers-dp12) 0;
+}
+
 .guidanceList {
     display: grid;
     gap: var(--spacers-dp4);
     margin-bottom: var(--spacers-dp12);
     padding: var(--spacers-dp10);
-    border: 1px dashed var(--colors-grey400);
+    border: 1px dashed var(--border-subtle);
     border-radius: 6px;
-    background: var(--colors-grey050);
+    background: var(--surface-muted);
 }
 
 .details {
     margin-top: var(--spacers-dp20);
+}
+
+.requiredHint {
+    border-left: 3px solid var(--colors-yellow600);
+    padding-left: var(--spacers-dp8);
 }
 
 @media (max-width: 720px) {
@@ -275,6 +325,10 @@
 
     .content {
         padding-inline: var(--spacers-dp12);
+    }
+
+    .tabs {
+        padding: var(--spacers-dp4);
     }
 
     .panel {

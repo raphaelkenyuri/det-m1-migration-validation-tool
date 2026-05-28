@@ -622,11 +622,13 @@ const MappingTab = ({
                 )}
                 {(!config.dhis2.programId ||
                     config.dhis2.programStageIds.length === 0) && (
-                    <NoticeBox title={i18n.t('DHIS2 source required')}>
-                        {i18n.t(
-                            'Select the DET M1 program and at least one program stage before fetching DHIS2 data.'
-                        )}
-                    </NoticeBox>
+                    <div className={classes.requiredHint}>
+                        <NoticeBox title={i18n.t('DHIS2 source required')}>
+                            {i18n.t(
+                                'Select the DET M1 program and at least one program stage before fetching DHIS2 data.'
+                            )}
+                        </NoticeBox>
+                    </div>
                 )}
                 {programsError && (
                     <NoticeBox error title={i18n.t('Programs could not load')}>
@@ -970,11 +972,13 @@ const CompareTab = ({
                 )}
                 {(!config.dhis2.programId ||
                     config.dhis2.programStageIds.length === 0) && (
-                    <NoticeBox title={i18n.t('DHIS2 source required')}>
-                        {i18n.t(
-                            'Set the program and at least one program stage on the Mappings tab.'
-                        )}
-                    </NoticeBox>
+                    <div className={classes.requiredHint}>
+                        <NoticeBox title={i18n.t('DHIS2 source required')}>
+                            {i18n.t(
+                                'Set the program and at least one program stage on the Mappings tab.'
+                            )}
+                        </NoticeBox>
+                    </div>
                 )}
             </div>
             <div className={classes.summaryGrid}>
@@ -1181,7 +1185,9 @@ const PreviewTable = ({
     scrollable?: boolean
 }) => {
     if (rows.length === 0) {
-        return <p className={classes.muted}>{i18n.t('No rows to display.')}</p>
+        return (
+            <p className={classes.emptyState}>{i18n.t('No rows to display.')}</p>
+        )
     }
 
     const headers = Object.keys(rows[0]).slice(0, 8)
